@@ -4,8 +4,9 @@ a **Simple** &amp; **Minimalist** 'cat' clon
 
 The most notable difference is that in reality this program only copies the basic functionality of __Cat__, which would be displaying the content of a file that is passed through the terminal
 
-### Note from the Dev
-I made this program out of boredom, entertainment and learning, I do not recommend its use, literally cat is installed with GNU Utils and is much more complete.
+> Note from the Dev
+> 
+> I made this program out of boredom, entertainment and learning, I do not recommend its use, literally cat is installed with GNU Utils and is much more complete.
 
 ## Use
 
