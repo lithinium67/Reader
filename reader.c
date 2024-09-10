@@ -1,5 +1,3 @@
-// this mod of Reader have a implementation with the Command line Arguments (CLA)
-
 #include <stdio.h> // for printf, and file functions 
 #include <stdlib.h> // for system()
 
@@ -27,8 +25,6 @@ int main(int argc, char *argv[]){
         return 2;
     #endif
 
-    //char *nFile;
-
     // Arguments Check
     if (argc <= 1){
         printf("Missing Arguments (File Path)\n");
@@ -38,12 +34,14 @@ int main(int argc, char *argv[]){
         return 1;
     }
     
+    // Saving File Name
     const char *nFile = argv[1];
     
     system(CLEAR);
 
     ReadAndPrintFile(nFile);
 
+    // Return 0 and Closing Main Function (Exit Program)
     return 0;
 }
 
@@ -55,7 +53,8 @@ void ReadAndPrintFile(const char *FileName){
         return;
     }
     
-    do {
+    
+    do { // Read the file in a loop until it is finished
         int buffer = fgetc(pFile);
         if (buffer != EOF){ // Continue reading if you haven't reached the end of the file
             printf("%c", (char) buffer);
