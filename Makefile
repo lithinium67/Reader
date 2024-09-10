@@ -3,3 +3,6 @@ bin: reader.c
 
 clean:
 		rm -rf reader
+
+install: bin
+		sudo cp reader /bin
